@@ -20,3 +20,4 @@ Bioconductor packages provide much more sophisticated string handling utilities 
 * biomaRt: interface to BioMart annotations
 * rtracklayer: Annotation imports, interface to online genome browsers
 * HelloRanges: Bedtools semantics in Bioc’s Ranges infrastructure
+* http://bioconductor.org/packages/release/bioc/html/HelloRanges.html : Bedtools semantics in Bioc’s Ranges infrastructure
