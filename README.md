@@ -2,11 +2,9 @@
 Sequence Analysis in R and Bioconductor.
 
 ## R Base
-
 Some basic string handling utilities. Wide spectrum of numeric data analysis tools.
 
 ## Bioconductor
-
 Bioconductor packages provide much more sophisticated string handling utilities for sequence analysis (Lawrence et al. 2013; Huber et al. 2015).
 
 * Biostrings: general sequence analysis environment
@@ -23,7 +21,6 @@ Bioconductor packages provide much more sophisticated string handling utilities 
 * HelloRanges: Bedtools semantics in Bioc’s Ranges infrastructure
 
 ## Sequences in Bioconductor
-
 XString for single sequence :
 
 * DNAString: for DNA
@@ -52,7 +49,6 @@ https://ftp.ncbi.nlm.nih.gov/genomes/archive/old_genbank/Bacteria/Halobacterium_
 
 
 # NGS Sequences
-
 Sequence and Quality Data: FASTQ Format
 
 Four lines per sequence:
@@ -70,11 +66,9 @@ The following gives an example of 3 Illumina reads in a FASTQ file.
 4. BA@7>B=>:>>7@7@>>9=BAA?;>52;>:9=8.=A
 
 ## Sequence and Quality Data: QualityScaleXStringSet
-
 Phred quality scores are integers from 0-50 that are stored as ASCII characters after adding 33. The basic R functions rawToChar and charToRaw can be used to interconvert among their representations.
 
 ## Range Operations
-
 Important Data Objects for Range Operations.
 * IRanges: stores range data only (IRanges library)
 * GRanges: stores ranges and annotations (GenomicRanges library)
