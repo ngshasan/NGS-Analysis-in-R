@@ -15,6 +15,7 @@ Bioconductor packages provide much more sophisticated string handling utilities 
 * GenomicRanges: high-level infrastructure for range data
 * GenomicFeatures: managing transcript centric annotations
 * GenomicAlignments: handling short genomic alignments
+* systemPipeR: NGS workflow and report generation environment
 * Rsamtools: interface to samtools, bcftools and tabix
 * BSgenome: genome annotation data
 * biomaRt: interface to BioMart annotations
