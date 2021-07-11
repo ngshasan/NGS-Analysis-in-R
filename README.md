@@ -72,3 +72,10 @@ The following gives an example of 3 Illumina reads in a FASTQ file.
 ## Sequence and Quality Data: QualityScaleXStringSet
 
 Phred quality scores are integers from 0-50 that are stored as ASCII characters after adding 33. The basic R functions rawToChar and charToRaw can be used to interconvert among their representations.
+
+## Range Operations
+
+Important Data Objects for Range Operations.
+* IRanges: stores range data only (IRanges library)
+* GRanges: stores ranges and annotations (GenomicRanges library)
+* GRangesList: list version of GRanges container (GenomicRanges library)
