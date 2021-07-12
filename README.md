@@ -1,11 +1,16 @@
 ## NGS-Analysis-in-R
-Sequence Analysis in R and Bioconductor.
+Sequence Analysis Tutorial in R and Bioconductor. 
+
+### Introduction
+Here I tried to learn how to Analyse NGS in R without using Linux Terminal.
 
 ## R Base
 Some basic string handling utilities. Wide spectrum of numeric data analysis tools.
 
 ## Bioconductor
 Bioconductor packages provide much more sophisticated string handling utilities for sequence analysis (Lawrence et al. 2013; Huber et al. 2015).
+
+## Bioconductor packages use in NGS:
 
 * Biostrings: general sequence analysis environment
 * ShortRead: pipeline for short read data
@@ -30,7 +35,7 @@ XString for single sequence :
 
 XStringSet for many sequences:
 
-* DNAStringSet``: for DNA
+* DNAStringSet: for DNA
 * RNAStringSet: for RNA
 * AAStringSet: for amino acid
 * BStringSet: for any string
