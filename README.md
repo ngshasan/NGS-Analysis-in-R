@@ -1,8 +1,18 @@
-## NGS-Analysis-in-R
+## NGS-Analysis-in-R/Bioconducot
+
 Sequence Analysis Tutorial in R and Bioconductor. 
 
 ### Introduction
 Here I tried to learn how to Analyse NGS in R without using Linux Terminal.
+
+## Why NGS Analysis with R/Bioconductor?
+
++ Hundreds of reusable NGS packages are available
++ Invent new things rather than reinventing existing ones
++ Many NGS methods require advanced statistical methods
++ Many NGS applications share similar analysis needs. Most of them have
+existing solutions.
++ Access to advanced and reproducible genome graphics
 
 ## R Base
 Some basic string handling utilities. Wide spectrum of numeric data analysis tools.
