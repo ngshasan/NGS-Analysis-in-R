@@ -15,6 +15,7 @@ Bioconductor packages provide much more sophisticated string handling utilities 
 To install bioconductor packages, execute the following lines in the R console. Please also make sure that you have a recent R version installed on your system. R versions 3.3.x or higher are recommended.
 
 source("https://bioconductor.org/biocLite.R")
+
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
 BiocManager::install(c("Biostrings", "GenomicRanges", "rtracklayer", "systemPipeR", "seqLogo", "ShortRead"))
