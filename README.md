@@ -17,7 +17,8 @@ To install bioconductor packages, execute the following lines in the R console. 
 source("https://bioconductor.org/biocLite.R")
 
 if (!requireNamespace("BiocManager", quietly = TRUE))
-    install.packages("BiocManager")
+
+install.packages("BiocManager")
 BiocManager::install(c("Biostrings", "GenomicRanges", "rtracklayer", "systemPipeR", "seqLogo", "ShortRead"))
 
 
