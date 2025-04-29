@@ -264,3 +264,176 @@ Important Data Objects for Range Operations.
 * IRanges: stores range data only (IRanges library)
 * GRanges: stores ranges and annotations (GenomicRanges library)
 * GRangesList: list version of GRanges container (GenomicRanges library)
+
+Last login: Tue Apr 29 09:59:51 on ttys000
+(base) mhasan@MacBook-Pro ~ % ssh mehadi@gryffindor.nri.bcm.edu 
+ssh: connect to host gryffindor.nri.bcm.edu port 22: Undefined error: 0
+(base) mhasan@MacBook-Pro ~ % ssh mehadih@skyriver.nri.bcm.edu 
+mehadih@skyriver.nri.bcm.edu's password: 
+Welcome to Ubuntu 22.04.3 LTS (GNU/Linux 6.5.0-15-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/pro
+
+Expanded Security Maintenance for Applications is not enabled.
+
+274 updates can be applied immediately.
+165 of these updates are standard security updates.
+To see these additional updates run: apt list --upgradable
+
+18 additional security updates can be applied with ESM Apps.
+Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+
+
+The list of available updates is more than a week old.
+To check for new updates run: sudo apt update
+
+Welcome to Bright Cluster Manager 9.2 
+ 
+                                        Based on Ubuntu Jammy Jellyfish 22.04
+                                                    Cluster Manager ID: #00000
+
+Use the following commands to adjust your environment:                        
+ 
+'module avail'            - show available modules                            
+'module add <module>'     - adds a module to your environment for this session
+'module initadd <module>' - configure module to be loaded at every login
+                            (Note: initadd is available only for Tcl modules)
+ 
+-------------------------------------------------------------------------------
+Last login: Fri Apr 25 20:24:55 2025 from 10.70.15.96
+(base) mehadih@leia1:~$ 
+(base) mehadih@leia1:~$ cd
+(base) mehadih@leia1:~$ ls
+bioinformatics  miniconda3  my_cache_dir  todolist  work_bcm
+(base) mehadih@leia1:~$ cd bioinformatics/
+(base) mehadih@leia1:~/bioinformatics$ ls
+collab  liuzlab  ngsalex  tools
+(base) mehadih@leia1:~/bioinformatics$ cd ..
+(base) mehadih@leia1:~$ cd  work_bcm/
+(base) mehadih@leia1:~/work_bcm$ ls
+mhasan_projects
+(base) mehadih@leia1:~/work_bcm$ cd mhasan_projects/
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ ls
+dataset_2024  project2024  project2025  scripts_mhasan
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ pwd
+/home/mehadih/work_bcm/mhasan_projects
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ 
+
+
+
+
+
+
+
+
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ ls
+dataset_2024  project2024  project2025  scripts_mhasan
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ pwd
+/home/mehadih/work_bcm/mhasan_projects
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ cd
+(base) mehadih@leia1:~$ pwd
+/home/mehadih
+(base) mehadih@leia1:~$ cd /home/mehadih/work_bcm/mhasan_projects
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ mv scripts_mhasan/ /home/mehadih
+(base) mehadih@leia1:~/work_bcm/mhasan_projects$ cd
+(base) mehadih@leia1:~$ ls
+bioinformatics  miniconda3  my_cache_dir  scripts_mhasan  todolist  work_bcm
+(base) mehadih@leia1:~$ mv scripts_mhasan/ mehadi
+(base) mehadih@leia1:~$ 
+
+
+
+
+
+
+
+
+
+(base) mehadih@leia1:~$ ls
+bioinformatics  mehadi  miniconda3  my_cache_dir  todolist  work_bcm
+(base) mehadih@leia1:~$ cd mehadi/
+(base) mehadih@leia1:~/mehadi$ ks
+ks: command not found
+(base) mehadih@leia1:~/mehadi$ ls
+git_command          scripts-ncbi-geo         star_read_merge
+motif_project        scripts_nextflow         star_scripts_hamin
+scripts-go-kegg-ora  scripts_salmon           star_scripts_yanli
+scripts_gsva         scripts_variant_calling  vim_command
+(base) mehadih@leia1:~/mehadi$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+(base) mehadih@leia1:~/mehadi$ cd scripts_gsva/
+(base) mehadih@leia1:~/mehadi/scripts_gsva$ ls
+data  plots  results  scripts
+(base) mehadih@leia1:~/mehadi/scripts_gsva$ cd scripts/
+(base) mehadih@leia1:~/mehadi/scripts_gsva/scripts$ ls
+gsva_esme.Rmd  gsva_trial.Rmd  pathway-analysis_rnaseq_03_gsva.Rmd
+(base) mehadih@leia1:~/mehadi/scripts_gsva/scripts$ vim gsva_esme.Rmd 
+(base) mehadih@leia1:~/mehadi/scripts_gsva/scripts$ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(base) mehadih@leia1:~/mehadi/scripts_gsva/scripts$ ls
+gsva_esme.Rmd  gsva_trial.Rmd  pathway-analysis_rnaseq_03_gsva.Rmd
+(base) mehadih@leia1:~/mehadi/scripts_gsva/scripts$ vim pathway-analysis_rnaseq_03_gsva.Rmd 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Purpose of this analysis
+
+This example is one of pathway analysis module set, we recommend looking at the [pathway analysis table below](#how-to-choose-a-pathway-analysis) to help you determine which pathway analysis method is best suited for your purposes.
+
+In this example we will cover a method called Gene Set Variation Analysis (GSVA) to calculate gene set or pathway scores on a per-sample basis [@Hanzelmann2013].
+GSVA transforms a gene by sample gene expression matrix into a gene set by sample pathway enrichment matrix [@Hanzelmann-github].
+We'll make a heatmap of the enrichment matrix, but you can use the GSVA scores for a number of other downstream analyses such as differential expression analysis.
+
+⬇️ [**Jump to the analysis code**](#analysis) ⬇️
+
+### What is pathway analysis?
+
+Pathway analysis refers to any one of many techniques that uses predetermined sets of genes that are related or coordinated in their expression in some way (e.g., participate in the same molecular process, are regulated by the same transcription factor) to interpret a high-throughput experiment.
+"pathway-analysis_rnaseq_03_gsva.Rmd" 688L, 34262B            1,1           Top
+
